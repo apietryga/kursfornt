@@ -1,4 +1,20 @@
 body{
-  background-color: rgba(31, 111, 26, 0.565);
+  background-color: rgba(161, 187, 140, 0.8);
   font-family: 'Quicksand', sans-serif;
+}
+
+nav{
+  border:5px groove green;
+  display:flex;
+  justify-content: space-between;
+}
+
+
+h1{
+  border:5px groove blue;
+}
+
+ul{
+  border:5px groove red;
+  display:flex;
 }
