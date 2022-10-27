@@ -12,7 +12,7 @@ nav{
   background-color: var(--navAccent);
   display:flex;
   justify-content: space-between;
-  padding:5px;
+  padding:5px 10px;
 }
 
 h1{
@@ -28,7 +28,7 @@ ul{
 }
 
 li{
-  padding:0 5px;
+  padding:0 0 0 10px;
 }
 
 a{
