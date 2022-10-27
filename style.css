@@ -54,6 +54,20 @@ p{
   line-height: 1.6rem;
 }
 
+section{
+  padding:10px;
+}
+
+section div{
+  display: flex;
+  justify-content: center;
+}
+
+section div a{
+  margin:1rem;
+  font-size: 3rem;
+}
+
 @media (min-width: 768px){
   header{
     flex-wrap: nowrap;
