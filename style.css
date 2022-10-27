@@ -32,7 +32,7 @@ a{
   text-decoration: none;
 }
 
-header{
+body > header{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
