@@ -33,7 +33,6 @@ a{
 }
 
 header{
-  border:5px solid red;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -53,4 +52,18 @@ h2{
 p{
   margin-top:.4rem;
   line-height: 1.6rem;
+}
+
+@media (min-width: 768px){
+  header{
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  img{
+    max-width: 40%;
+    margin:3rem;
+  }
+  header div{
+    max-width: 40%;
+  }
 }
