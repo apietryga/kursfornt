@@ -73,11 +73,27 @@ section div a{
     flex-wrap: nowrap;
     align-items: center;
   }
+
   img{
     max-width: 40%;
     margin:3rem;
   }
+
   header div{
     max-width: 40%;
+  }
+
+  section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section > * {
+    max-width: 60%;
+  }
+
+  section div{
+    margin:3rem;
   }
 }
