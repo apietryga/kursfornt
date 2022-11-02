@@ -118,17 +118,29 @@ footer p{
 
 /* mobile view */
 @media (max-width:768px){
-  nav ul {
-    /* border:2px dashed red; */
-    flex-direction: column;
-    position:absolute;
-    top:100%;
-    right:0;
-    height:100vh;
-    padding-left: 10vw;
-    background-color: var(--navAccent);
+  nav{
+    height:2rem;
   }
+
+  nav ul {
+    flex-direction: column;
+    position:fixed;
+    top:calc(10px + 2rem);
+    right:0;
+    height:calc(100% - (10px + 2rem));
+    background-color: var(--navAccent);
+    width:40vw;
+    text-align: right;
+    transition: .7s;
+  }
+
   nav ul li {
     padding:.75rem 1rem;
   }
+
+  #toggler:checked ~ ul{
+    border: 2px dashed red;
+    right:-40vh;
+  }
+
 }
