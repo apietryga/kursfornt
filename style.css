@@ -12,6 +12,7 @@ nav{
   background-color: var(--navAccent);
   display:flex;
   justify-content: space-between;
+  align-items: center;
   padding:5px 10px;
   position: sticky;
   top:0;
@@ -85,6 +86,10 @@ footer p{
   text-align: right;
 }
 
+#toggler, label{
+  display:none;
+}
+
 /* desktop view */
 @media (min-width: 768px){
   header{
@@ -139,8 +144,54 @@ footer p{
   }
 
   #toggler:checked ~ ul{
-    border: 2px dashed red;
-    right:-40vh;
+    right:-40vw;
+  }
+
+  label {
+    display:flex;
+    /* border:2px dashed red; */
+    width: 1.5em;
+    height: 1.5em;
+    position: relative;
+  }
+
+  label div{
+    background-color: #fff;
+    height:3px;
+    width:100%;
+    position:absolute;
+    border-radius: 5px;
+    transition: .7s;
+  }
+
+  label div:nth-child(1){
+    top:50%;
+    transform: rotate(225deg);
+  }
+
+  label div:nth-child(2){
+    top:50%;
+    opacity: 0;
+  }
+
+  label div:nth-child(3){
+    transform: rotate(-225deg);
+    top:50%;
+  }
+
+  #toggler:checked ~ label div:nth-child(1){
+    top:20%;
+    transform: rotate(0deg);
+  }
+
+  #toggler:checked ~ label div:nth-child(2){
+    top:50%;
+    opacity: 1;
+  }
+
+  #toggler:checked ~ label div:nth-child(3){
+    transform: rotate(0deg);
+    top:80%;
   }
 
 }
