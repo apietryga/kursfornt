@@ -83,9 +83,33 @@ body p {
 body main {
   display: flex;
   flex-wrap: wrap;
+  padding: 10px;
 }
 body main header {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+body main header h2 {
+  width: 100%;
+  margin-bottom: 0.83em;
+}
+body main header table {
+  border: 5px groove grey;
+  background-color: var(--navAccent);
+  color: #fff;
+}
+body main header table th {
+  background-color: rgba(255, 255, 255, 0.67);
+  padding: 0.25rem 1rem;
+  color: #000;
+}
+body main header table td {
+  background-color: rgba(11, 99, 133, 0.486);
+  padding: 0.25rem 1rem;
+}
+body main header table tr:nth-child(even) {
+  background-color: rgba(133, 115, 11, 0.486);
 }
 body main .content {
   flex: 1;
