@@ -20,6 +20,7 @@ body{
     padding:5px 10px;
     position: sticky;
     top:0;
+    z-index: 1;
     h1{
       margin:0;
     }
@@ -63,17 +64,19 @@ body{
   }
 
   main{
-    border: 2px dashed red;
     display:flex;
+    flex-wrap: wrap;
     header{
       flex:1;
     }
     .content{
       flex:1;
-      border:2px dashed blue;
+      display:flex;
+      justify-content: center;
+      align-items: center;
       .watch{
-        height:20rem;
-        width:20rem;
+        height:18rem;
+        width:18rem;
         border:5px groove grey;
         background-color: #fff;
         border-radius: 50%;
@@ -96,6 +99,7 @@ body{
           background-color: red;
           left:calc( 50% - 1.5px);
           animation:linear rotateTip 1s infinite;
+          transform:rotate(180deg);
         }
 
         .medium {
@@ -106,9 +110,11 @@ body{
           top:5%;
           clip-path: polygon(50% 0%, 100% 85%, 50% 100%, 0 85%);
           animation: linear rotateTip 60s infinite;
+          transform:rotate(50deg);
         }
 
         .big{
+          transform:rotate(-50deg);
           left:calc( 50% - 8px);
           width:16px;
           background-color: rgb(62, 58, 58);

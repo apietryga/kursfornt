@@ -22,6 +22,7 @@ body nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 body nav h1 {
   margin: 0;
@@ -58,19 +59,21 @@ body p {
   line-height: 1.6rem;
 }
 body main {
-  border: 2px dashed red;
   display: flex;
+  flex-wrap: wrap;
 }
 body main header {
   flex: 1;
 }
 body main .content {
   flex: 1;
-  border: 2px dashed blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body main .content .watch {
-  height: 20rem;
-  width: 20rem;
+  height: 18rem;
+  width: 18rem;
   border: 5px groove grey;
   background-color: #fff;
   border-radius: 50%;
@@ -105,6 +108,7 @@ body main .content .watch .small {
   left: calc(50% - 1.5px);
   -webkit-animation: linear rotateTip 1s infinite;
           animation: linear rotateTip 1s infinite;
+  transform: rotate(180deg);
 }
 body main .content .watch .medium {
   left: calc(50% - 5px);
@@ -116,8 +120,10 @@ body main .content .watch .medium {
           clip-path: polygon(50% 0%, 100% 85%, 50% 100%, 0 85%);
   -webkit-animation: linear rotateTip 60s infinite;
           animation: linear rotateTip 60s infinite;
+  transform: rotate(50deg);
 }
 body main .content .watch .big {
+  transform: rotate(-50deg);
   left: calc(50% - 8px);
   width: 16px;
   background-color: rgb(62, 58, 58);
