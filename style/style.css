@@ -24,6 +24,10 @@
           animation: trigger 1s;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgba(129, 72, 198, 0.8);
   font-family: "Quicksand", sans-serif;
@@ -89,10 +93,11 @@ body main header {
   flex: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-body main header h2 {
-  width: 100%;
-  margin-bottom: 0.83em;
+body main header p {
+  text-align: center;
+  max-width: 300px;
 }
 body main header table {
   border: 5px groove grey;
