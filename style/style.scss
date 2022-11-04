@@ -2,6 +2,16 @@
   --navAccent:rgba(0, 0, 0, 0.77);
 }
 
+@keyframes trigger {
+  25%{ transform:scale(1.2) rotate(-20deg); }
+  75%{ transform:scale(1.2) rotate(20deg); }
+}
+
+.trigger:hover{
+  animation: trigger 1s;
+}
+
+
 body{
   background-color: rgba(129, 72, 198, 0.8);
   font-family: 'Quicksand', sans-serif;
